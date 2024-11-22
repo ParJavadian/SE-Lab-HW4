@@ -46,4 +46,9 @@ public class CalculatorStepDefs {
             exception = e;
         }
     }
+
+    @Then("the result should be {double}")
+    public void theResultShouldBe(double expectedResult) {
+        assertEquals(expectedResult, result, 0.001);
+    }
 }
