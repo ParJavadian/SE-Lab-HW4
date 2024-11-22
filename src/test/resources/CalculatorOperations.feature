@@ -16,3 +16,8 @@ Feature: Calculator operations
       | 10       | 5        | -        | 5      |
       | 10       | 5        | *        | 50     |
       | 10       | 5        | /        | 2      |
+
+    # Additional cases for edge cases
+      | -10      | 5        | +        | -5     |
+      | 10       | -5       | +        | 5      |
+      | -10      | -5       | +        | -15    |
