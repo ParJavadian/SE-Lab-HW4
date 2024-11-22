@@ -31,3 +31,10 @@ Feature: Calculator operations
       | -10      | 5        | *        | -50    |
       | 10       | -5       | *        | -50    |
       | -10      | -5       | *        | 50     |
+
+      # Division cases, including division by zero
+      | 10       | 0        | /        | error  |
+      | 0        | 10       | /        | 0      |
+      | -10      | 5        | /        | -2     |
+      | 10       | -5       | /        | -2     |
+      | -10      | -5       | /        | 2      |
