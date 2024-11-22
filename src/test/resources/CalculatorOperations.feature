@@ -8,3 +8,11 @@ Feature: Calculator operations
     And the second operand is <operand2>
     When the operation is "<operator>"
     Then the result should be <result>
+
+    Examples:
+      # Basic operations
+      | operand1 | operand2 | operator | result |
+      | 10       | 5        | +        | 15     |
+      | 10       | 5        | -        | 5      |
+      | 10       | 5        | *        | 50     |
+      | 10       | 5        | /        | 2      |
