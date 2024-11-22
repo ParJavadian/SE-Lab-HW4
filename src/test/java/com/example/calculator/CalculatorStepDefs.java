@@ -23,4 +23,27 @@ public class CalculatorStepDefs {
         this.operand2 = operand2;
     }
 
+    @When("the operation is {string}")
+    public void theOperationIs(String operator) {
+        Calculator calculator = new Calculator();
+        try {
+            switch (operator) {
+                case "+":
+                    result = calculator.add(operand1, operand2);
+                    break;
+                case "-":
+                    result = calculator.subtract(operand1, operand2);
+                    break;
+                case "*":
+                    result = calculator.multiply(operand1, operand2);
+                    break;
+                case "/":
+                    result = calculator.divide(operand1, operand2);
+                    break;
+            }
+            exception = null;
+        } catch (ArithmeticException e) {
+            exception = e;
+        }
+    }
 }
