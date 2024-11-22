@@ -51,4 +51,11 @@ public class CalculatorStepDefs {
     public void theResultShouldBe(double expectedResult) {
         assertEquals(expectedResult, result, 0.001);
     }
+
+    @Then("the result should be error")
+    public void theResultShouldBeError() {
+        assertThrows(ArithmeticException.class, () -> {
+            if (exception != null) throw exception;
+        });
+    }
 }
