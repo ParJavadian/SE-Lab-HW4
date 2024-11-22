@@ -27,7 +27,7 @@ Feature: Calculator operations
       | 10       | -5       | -        | 15     |
       | -10      | -5       | -        | -5     |
 
-    # Kiana
+    # Multiply cases
       | -10      | 5        | *        | -50    |
       | 10       | -5       | *        | -50    |
       | -10      | -5       | *        | 50     |
